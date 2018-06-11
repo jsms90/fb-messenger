@@ -8,7 +8,7 @@
 
 Notes:
 - To fetch photos use [http://jsonplaceholder.typicode.com/photos?_limit=30](http://jsonplaceholder.typicode.com/photos?_limit=30). Don't forget the _limit=30 parameter at the end of the query or it will be slow.
-- To fetch a single photo use [http://jsonplaceholder.typicode.com/photos/3](http://jsonplaceholder.typicode.com/photos/PHOTO_ID)
+- To fetch a single photo use [http://jsonplaceholder.typicode.com/photos/PHOTO_ID](http://jsonplaceholder.typicode.com/photos/3)
 - User react-router v4 for the routing
 - This is not a master detail page. It's more simple than the Messenger app
 
