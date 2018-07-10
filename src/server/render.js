@@ -28,7 +28,7 @@ export default (component, { sheet, response, graphqlClient, status = 200 }) => 
       </head>
       <body>
         <div id="root">${'hello SSR'}</div>
-        <script type="application/javascript" src=""></script>
+        <script type="application/javascript" src="${bundleJsUrl}"></script>
       </body>
   </html>
   `
