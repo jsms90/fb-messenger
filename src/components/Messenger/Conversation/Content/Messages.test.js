@@ -12,13 +12,20 @@ Enzyme.configure({ adapter: new Adapter() })
 
 describe('<Messages />', () => {
   it(`should send a message (unit test)`, async () => {
-    // 1. render Messages component
-    // 2. find button
-    // 3. click on the button
-    // 4. assert the 'message was sent' -> you can use toHaveBeenCalled
+    // 1. shallow the <Messages /> component
+
+    // 2  Mock the api. Hint, the api functions are passed as a defaultProp (look at the bottom of Messages.js),
+    // you can override that prop by doing <Messages api={my_mocked_api_object} />
+
+    // 3. Find the button -> you have an example here http://airbnb.io/enzyme/#shallow-rendering
+
+    // 4. Click on the button -> you have an example here http://airbnb.io/enzyme/#shallow-rendering heads-up! Enzyme expectations are not camel case,
+    //      Jest expectations are camel case (for when you copy&paste :)
+
+    // 5. Assert the 'message was sent' -> you can use toHaveBeenCalled on the my_mocked_api_object you passed
   })
 
   it(`should send a message (integration test)`, async () => {
-
+  
   })
 })
