@@ -26,7 +26,7 @@ describe('<Messages />', () => {
     //      Enzyme expectations are not camel case,
     //      Jest expectations are camel case (for when you copy&paste :)
 
-    // Questions:
+    // Final questions:
     // - Is this black-box testing or white-box testing?
     // - What's your level of confidence that the user will be able to send a message?
   })
@@ -51,7 +51,7 @@ describe('<Messages />', () => {
 
     // 7. Assert the 'message was sent' -> you can just validate the message you sent is on the Messages list
 
-    // Questions:
+    // Final questions:
     // - Is this black-box testing or white-box testing?
     // - What's your level of confidence that the user will be able to send a message?
   })
