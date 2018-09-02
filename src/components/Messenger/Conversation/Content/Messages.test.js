@@ -8,9 +8,8 @@ import ConnectedMessages, { Messages, MessageBox, Message } from './Messages'
 
 describe('<Messages />', () => {
   it(`should send a message (unit test)`, async () => {
-    // You can use wrapper.debug() to console.log the component that you are testing
-
     // 1. shallow the <Messages /> component
+    // You can use console.log(wrapper.debug()) to console.log the component that you are testing
 
     // 2  Mock the api. Hint, the api functions are passed as a defaultProp (look at the bottom of Messages.js),
     // you can override that prop by doing <Messages api={my_mocked_api_object} />
@@ -30,8 +29,6 @@ describe('<Messages />', () => {
   })
 
   it(`should send a message (integration test)`, async () => {
-    // You can use wrapper.debug() to console.log the component that you are testing
-    
     // 1. shallow or mount? the <Messages /> component
     //    A) which component? Messages or ConnectedMessages
     //    B) If you mount the component then all the children are rendered. Hint: you need to provide a store.
