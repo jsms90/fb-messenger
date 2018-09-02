@@ -50,6 +50,6 @@ describe('<Messages />', () => {
 
     // 7. Assert the 'message was sent' -> you can just validate the message you sent is on the Messages list
 
-    // Is this blackbox testing or whitebox testing?
+    // Is this black-box testing or white-box testing?
   })
 })
