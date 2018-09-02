@@ -10,6 +10,5 @@ describe('<Avatar />', () => {
   it('renders Avatar', () => {
     const wrapper = shallow(<Avatar />)
     expect(shallowToJson(wrapper)).toMatchSnapshot()
-    console.log(<Avatar />)
   })
 })
