@@ -1,10 +1,7 @@
 import React from 'react'
-import Enzyme, { shallow, mount } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 import UserDetail from './UserDetail'
-import Adapter from 'enzyme-adapter-react-16'
 import { shallowToJson } from 'enzyme-to-json'
-
-Enzyme.configure({ adapter: new Adapter() })
 
 describe('<UserDetail />', () => {
   it('renders properly',() => {
