@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { fetchPhoto } from '../../api'
+import { fetchPhoto } from '../../api/photos'
+import Loading from '../Loading';
 
 import PhotoDetail from './PhotoDetail'
 
@@ -20,7 +21,7 @@ class PhotoDetailContainer extends Component {
     console.log(photo)
     let content
     if (!photo || !photo.id) {
-      content = <p>loading...</p>
+      content = <Loading />
     } else {
       content = <PhotoDetail photo={photo} />
     }

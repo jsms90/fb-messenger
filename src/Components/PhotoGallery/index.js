@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { fetchPhotos } from "../../api";
+import { fetchPhotos } from "../../api/photos";
 
 import PhotoGallery from "./PhotoGallery";
 

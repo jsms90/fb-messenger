@@ -1,8 +1,9 @@
 .photo-gallery {
   margin: 24px auto;
-  max-width: 900px;
+  max-width: 830px;
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .image-thumbnail {

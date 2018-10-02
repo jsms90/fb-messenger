@@ -1,8 +1,8 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
-import PhotoGallery from './components/PhotoGallery'
-import PhotoDetail from './components/PhotoDetail'
+import PhotoGallery from './PhotoGallery'
+import PhotoDetail from './PhotoDetail'
 
 function Photos({ match }) {
   return (
