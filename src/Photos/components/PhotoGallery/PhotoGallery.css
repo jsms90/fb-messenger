@@ -1,0 +1,10 @@
+.photo-gallery {
+  margin: 24px auto;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap
+}
+
+.image-thumbnail {
+  margin: 8px;
+}

@@ -1,18 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { withRouter } from 'react-router'
+import "./PhotoGallery.css"
+import Thumbnail from './Thumbnail'
 
-function PhotoGallery({ photos, match }) {
-  console.log(match)
+const PhotoGallery = ({ photos, match }) => {
   return (
-    <div>
-      {photos.map(photo => (
-        <Link key={photo.id} to={`${match.url}/${photo.id}`}>
-          <img src={photo.thumbnailUrl} />
-        </Link>
+    <div className="photo-gallery">
+      {photos.map(photo => (<Thumbnail key={photo.id} to={`${match.url}/${photo.id}`} image={photo.thumbnailUrl} />
+
       ))}
     </div>
   )
 }
 
-export default withRouter(PhotoGallery)
+export default PhotoGallery
