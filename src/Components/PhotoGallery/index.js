@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { fetchPhotos } from "../../api/photos";
-
+import Loading from "../Loading";
 import PhotoGallery from "./PhotoGallery";
 
 class PhotoGalleryContainer extends Component {
@@ -18,7 +18,7 @@ class PhotoGalleryContainer extends Component {
   render() {
     const { photos } = this.state;
     const { match } = this.props;
-    if (!photos.length) return <p>Loading...</p>;
+    if (!photos.length) return <Loading />;
 
     return <PhotoGallery photos={this.state.photos} match={match} />;
   }
