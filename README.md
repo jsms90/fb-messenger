@@ -1,4 +1,4 @@
-# Recap 1
+# Project 1
 
 ## Start the API
 `cd api && npm install && npm start`
