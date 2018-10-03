@@ -1,9 +1,7 @@
 # Recap 1
 
 ## Start the API
-`cd api`
-`npm install`
-`npm start`
+`cd api && npm install && npm start`
 
 ## Exercise
 - Create your app using create-react-app
@@ -14,7 +12,7 @@
 Notes:
 - To fetch photos use [http://localhost:8888/photos](http://localhost:8888/photos). Don't forget to run the api by:
 `
-$cd api && npm install && npm start
+cd api && npm install && npm start
 `
 - To fetch a single photo use [http://localhost:8888/photo/PHOTO_ID](http://localhost:8888/photo/PHOTO_ID)
 - User react-router v4 for the routing ```yarn add react-router-dom```
