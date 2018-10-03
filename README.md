@@ -1,9 +1,9 @@
 # Recap 1
 
 ## Start the API
-$cd api
-npm install
-npm start
+`cd api`
+`npm install`
+`npm start`
 
 ## Exercise
 - Create your app using create-react-app
