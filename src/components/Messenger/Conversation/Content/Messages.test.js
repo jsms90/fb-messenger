@@ -27,6 +27,7 @@ describe('<Messages />', () => {
     wrapper.find(MessageBox).props().onChange({ target: { value: 'hi!' } })
     // Heads up! the following "await" works in this case because the code that handles the click returns a Promise.resolve,
     // it won't work if the code returns a pending promise waiting to be resolved or rejected.
+    // Events don't return anything. Therefore the promise returned from sendMessage is not passed to this code.
     // It's better to use https://www.npmjs.com/package/wait-for-expect. Check the next test to see how to use it
     await wrapper.find('button').simulate('click')
 
