@@ -128,6 +128,7 @@ Messages.defaultProps = {
 Messages.propTypes = {
   conversation: PropTypes.array,
   username: PropTypes.string,
+  api: PropTypes.object,
 }
 
 const mapStateToProps = state => ({
