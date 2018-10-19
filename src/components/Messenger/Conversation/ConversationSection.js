@@ -11,13 +11,11 @@ const Conversation = styled.div`
   flex:3;
 `
 
-const ConversationSection = ({ match, location }) => {
-  console.log(match.url, location)
-  return (
+const ConversationSection = ({ match }) => (
   <Conversation>
     <Route path={`${match.url}/:username`} component={ConversationContainer} />
   </Conversation>
-)}
+)
 
 ConversationSection.propTypes = {
   match: PropTypes.object.isRequired,

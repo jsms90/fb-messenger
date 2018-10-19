@@ -104,8 +104,8 @@ export class Messages extends React.Component {
           {styledConversation.length ? (
             styledConversation
           ) : (
-            <p>You have no messages</p>
-          )}
+              <p>You have no messages</p>
+            )}
         </MessagesList>
         <NewMessage>
           <MessageBox
@@ -127,8 +127,9 @@ Messages.defaultProps = {
 
 Messages.propTypes = {
   conversation: PropTypes.array,
-  username: PropTypes.string,
-  api: PropTypes.object,
+  username: PropTypes.string.isRequired,
+  api: PropTypes.object.isRequired,
+  receiveMessage: PropTypes.func.isRequired,
 }
 
 const mapStateToProps = state => ({
