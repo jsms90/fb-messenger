@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import waitForExpect from 'wait-for-expect'
 
 import configureStore from '../../../../store'
-import ConnectedMessage, { Messages, MessageBox, Message } from './Messages'
+import ComposedMessage, { Messages, MessageBox, Message } from './Messages'
 
 // TODO move this file to some /test/utils.js
 const Root = ({ children }) => {
@@ -53,7 +53,7 @@ describe('<Messages />', () => {
     }
     const wrapper = mount(
       <Root>
-        <ConnectedMessage
+        <ComposedMessage
           api={api}
           username="Alex"
         />
