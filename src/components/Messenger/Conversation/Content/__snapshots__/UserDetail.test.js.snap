@@ -6,9 +6,12 @@ exports[`<UserDetail /> renders properly 1`] = `
     <div>
       <Avatar
         size="large"
+        username="alex"
       />
       <div>
-        <styled.div />
+        <styled.div>
+          alex
+        </styled.div>
         <styled.div>
           Active 
           1

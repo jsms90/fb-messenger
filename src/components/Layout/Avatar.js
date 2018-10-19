@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
 const AvatarWrapper = styled.img`
@@ -23,10 +24,15 @@ const AvatarWrapper = styled.img`
 
 const Avatar = ({ username, size = "medium" }) => (
   <AvatarWrapper
-      size={size}
-      src={`/images/${username}_lg.jpg`}
-      alt={`${username}`}
+    size={size}
+    src={`/images/${username}_lg.jpg`}
+    alt={`${username}`}
   />
 )
+
+Avatar.propTypes = {
+  username: PropTypes.string.isRequired,
+  size: PropTypes.string,
+}
 
 export default Avatar

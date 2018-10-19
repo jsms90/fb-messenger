@@ -2,8 +2,8 @@
 
 exports[`<Avatar /> renders Avatar 1`] = `
 <styled.img
-  alt="undefined"
+  alt="alex"
   size="medium"
-  src="/images/undefined_lg.jpg"
+  src="/images/alex_lg.jpg"
 />
 `;
