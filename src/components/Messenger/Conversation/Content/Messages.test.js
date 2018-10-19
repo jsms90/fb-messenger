@@ -31,8 +31,8 @@ describe('<Messages />', () => {
   })
 
   it(`should send a message (integration test)`, async () => {
-    // 1. shallow or mount? the <Messages /> component
-    //    A) which component? Messages or ComposedMessages
+    // 1. shallow or mount the <Messages /> component ?
+    //    A) which component, Messages or ComposedMessages?
     //    B) If you mount the component then all the children are rendered. Hint: you need to provide a store.
 
     // 2  Mock the api. Hint, the api functions are passed as a defaultProp (look at the bottom of Messages.js),
