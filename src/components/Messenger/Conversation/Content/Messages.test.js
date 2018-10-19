@@ -7,6 +7,19 @@ import waitForExpect from 'wait-for-expect'
 import configureStore from '../../../../store'
 import ConnectedMessage, { Messages, MessageBox, Message } from './Messages'
 
+// TODO move this file to some /test/utils.js
+const Root = ({ children }) => {
+  const store = configureStore()
+
+  return (
+    <Router>
+      <Provider store={store}>
+        {children}
+      </Provider>
+    </Router>
+  )
+}
+
 describe('<Messages />', () => {
   it(`should send a message (unit test)`, async () => {
     const receiveMessage = jest.fn()
@@ -35,19 +48,16 @@ describe('<Messages />', () => {
   })
 
   it(`should send a message (integration test)`, async () => {
-    const store = configureStore()
     const api = {
       sendMessage: jest.fn(message => Promise.resolve(message))
     }
     const wrapper = mount(
-      <Router>
-        <Provider store={store}>
-          <ConnectedMessage
-            api={api}
-            username="Alex"
-          />
-        </Provider>
-      </Router>
+      <Root>
+        <ConnectedMessage
+          api={api}
+          username="Alex"
+        />
+      </Root>
     )
 
     expect(wrapper.find(Message).length).toBe(0)
