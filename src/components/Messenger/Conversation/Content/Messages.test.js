@@ -2,9 +2,10 @@ import React from 'react'
 import { shallow, mount } from 'enzyme'
 import { MemoryRouter as Router } from 'react-router-dom'
 import { Provider } from 'react-redux'
+import waitForExpect from 'wait-for-expect'
 
 import configureStore from '../../../../store'
-import ConnectedMessages, { Messages, MessageBox, Message } from './Messages'
+import ComposedMessages, { Messages, MessageBox, Message } from './Messages'
 
 describe('<Messages />', () => {
   it(`should send a message (unit test)`, async () => {
@@ -30,7 +31,7 @@ describe('<Messages />', () => {
 
   it(`should send a message (integration test)`, async () => {
     // 1. shallow or mount? the <Messages /> component
-    //    A) which component? Messages or ConnectedMessages
+    //    A) which component? Messages or ComposedMessages
     //    B) If you mount the component then all the children are rendered. Hint: you need to provide a store.
 
     // 2  Mock the api. Hint, the api functions are passed as a defaultProp (look at the bottom of Messages.js),
@@ -50,6 +51,7 @@ describe('<Messages />', () => {
 
     // Final questions:
     // - Is this black-box testing or white-box testing?
+    // - IF I remove Redux from my application and put all the state in React, do I need to update this test?
     // - What's your level of confidence that the user will be able to send a message?
   })
 })
