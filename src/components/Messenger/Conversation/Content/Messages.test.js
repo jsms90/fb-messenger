@@ -26,6 +26,7 @@ describe('<Messages />', () => {
 
     // Final questions:
     // - Is this black-box testing or white-box testing?
+    // - IF I remove Redux from my application and put all the state in React, do I need to update this test?
     // - What's your level of confidence that the user will be able to send a message?
   })
 
