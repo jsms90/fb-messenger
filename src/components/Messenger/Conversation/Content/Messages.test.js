@@ -46,6 +46,8 @@ describe('<Messages />', () => {
     expect(wrapper.find(Message).length).toBe(0)
 
     wrapper.find('input').simulate('change', { target: { value: 'hi there!' }})
+    // heads up! the following "await" works in this case because the code that handles the click returns a Promise.resolve,
+    // it won't work if the code returns a pending promise waiting to be resolved or rejected
     await wrapper.find('button').simulate('click')
     wrapper.update()
 
