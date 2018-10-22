@@ -23,8 +23,6 @@ If you haven't already set up your project, head here and follow the instruction
 
 1- Replace all the tests in src/actions for snapshot tests. You have an example in src/actions/ui.test.js
 
-## Bonus
-
 ## Articles and links
 
 - [https://martinfowler.com/bliki/TestPyramid.html](https://martinfowler.com/bliki/TestPyramid.html)
