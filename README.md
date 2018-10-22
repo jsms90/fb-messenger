@@ -154,7 +154,7 @@ compiler.watch({}, (err, stats) => {
 
 - Do we have to do initialize the Redux state in src/client/index with the same state than in src/server/app.js?
 
-## Links
+## Articles and links
 
 - [https://medium.com/leanjs/universal-create-react-app-step-by-step-b80ba68d125d](https://medium.com/leanjs/universal-create-react-app-step-by-step-b80ba68d125d)
 - [https://dev-blog.apollodata.com/](https://dev-blog.apollodata.com/)
