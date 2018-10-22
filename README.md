@@ -25,7 +25,7 @@ If you haven't already set up your project, head here and follow the instruction
 
 ## Bonus
 
-## Links
+## Articles and links
 
 - [https://martinfowler.com/bliki/TestPyramid.html](https://martinfowler.com/bliki/TestPyramid.html)
 - [https://facebook.github.io/jest/docs/en/expect.html#content](https://facebook.github.io/jest/docs/en/expect.html#content)
