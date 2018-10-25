@@ -23,9 +23,9 @@ const Root = ({ children }) => {
 describe('<Messages />', () => {
   it(`should send a message (unit test)`, async () => {
     const receiveMessage = jest.fn()
-    // In this case you could return use `const api = {sendMessage: jest.fn()}`
-    // but in the test below (integration test) you will need to return a promise.
-    // For simplicity we use the same api definition in both examples
+    // In this case you could return `const api = {sendMessage: jest.fn()}`,
+    // but in the test below (integration test) that approach does not work and you need to return a promise.
+    // For simplicity we use the same api implementation in both examples
     const api = {
       sendMessage: jest.fn(message => Promise.resolve(message))
     }
