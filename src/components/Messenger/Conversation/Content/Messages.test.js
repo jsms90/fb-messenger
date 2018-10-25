@@ -25,7 +25,7 @@ describe('<Messages />', () => {
     const receiveMessage = jest.fn()
     // In this case you could also return `const api = {sendMessage: jest.fn()}`,
     // but in the test below (integration test) that approach does not work and you need to return a promise.
-    // For simplicity we use the same api implementation in both examples
+    // For simplicity we have used the same api implementation in both examples
     const api = {
       sendMessage: jest.fn(message => Promise.resolve(message))
     }
