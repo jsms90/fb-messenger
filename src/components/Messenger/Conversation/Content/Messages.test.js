@@ -20,7 +20,8 @@ describe('<Messages />', () => {
     // 4. Click on the button -> you have an example here http://airbnb.io/enzyme/#shallow-rendering
 
     // 5. Assert the 'message was sent' -> 
-    //      You can use toHaveBeenCalled on the my_mocked_api_object you passed. toHaveBeenCalled need a mock function https://jestjs.io/docs/en/mock-functions
+    //      You can use toHaveBeenCalled on the my_mocked_api_object you passed. 
+    //      toHaveBeenCalled needs a mock function https://jestjs.io/docs/en/mock-functions, is your sendMessage a mock?
     //      You have an example here http://airbnb.io/enzyme/#shallow-rendering heads-up!
     //      Enzyme expectations are not camel case,
     //      Jest expectations are camel case (for when you copy&paste :)
