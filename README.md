@@ -20,6 +20,7 @@
 - Using this endpont [http://jsonplaceholder.typicode.com/posts](http://jsonplaceholder.typicode.com/posts), create a page that displays a list of posts in the following path: /posts
 - Add a form at the top of the page to add a new post. This url [http://jsonplaceholder.typicode.com/posts](http://jsonplaceholder.typicode.com/posts) also accepts the verb "POST" to add a new post
 - if you use the Rick & Morty API, you can add a [filter](https://rickandmortyapi.com/documentation/#filter-characters) of the characters list
+- you can specify a NOT_FOUND route in the Root of your app. (`<Route component={NotFound} />`)
 
 ## License
 
