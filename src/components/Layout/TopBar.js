@@ -4,6 +4,7 @@ import { logOut, getSession } from "../../auth";
 
 const TopBar = props => {
   const session = getSession();
+  console.log(session);
 
   return (
     <div className="top-bar">
@@ -18,7 +19,7 @@ const TopBar = props => {
         </li>
         <li>
           <Link to="/profile">
-            {session ? "username???" : ""}{" "}
+            {session ? session.username : ""}{" "}
             <img alt="profile" src="/images/default.jpg" />
           </Link>
         </li>
