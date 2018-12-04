@@ -7,7 +7,11 @@ import ConversationSection from "./ConversationSection";
 
 const Conversation = ({ username, match, conversation }) => (
   <ConversationSection>
-    <ConversationBar username={username} match={match} />
+    <ConversationBar
+      username={username}
+      match={match}
+      totalMessages={conversation.length}
+    />
     <ConversationContent
       match={match}
       conversation={conversation}
