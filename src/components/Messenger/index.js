@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Route } from "react-router-dom";
 
 import ThreadsContainer from "./ThreadsContainer";
-import Conversation from "./Conversation/Conversation";
+import ConversationContainer from "./Conversation/ConversationContainer";
 
 const Messenger = ({
   showSettings,
@@ -20,7 +20,7 @@ const Messenger = ({
       history={history}
       match={match}
     />
-    <Route path={`/messages/:username`} component={Conversation} />
+    <Route path={`/messages/:username`} component={ConversationContainer} />
   </div>
 );
 
