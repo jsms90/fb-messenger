@@ -22,15 +22,8 @@ class Login extends Component {
     }
   };
 
-  handleChange = (name, event) => {
-    if (name === "email") {
-      this.setState({ username: event.target.value });
-    } else if ((name = "password")) {
-      this.setState({ password: event.target.value });
-    }
-    // let change = {};
-    // change[name] = event.target.value;
-    //You need to set the change object in the state of the component
+  handleChange = (name, value) => {
+    this.setState({ [name]: value });
   };
 
   render() {
@@ -43,7 +36,9 @@ class Login extends Component {
 
         <FormGroup>
           <FormControl
-            onChange={event => this.handleChange("email", event)}
+            onChange={event =>
+              this.handleChange("username", event.target.value)
+            }
             className="form-control"
             id="email"
             type="email"
@@ -51,7 +46,9 @@ class Login extends Component {
             placeholder="Enter email"
           />
           <FormControl
-            onChange={event => this.handleChange("password", event)}
+            onChange={event =>
+              this.handleChange("password", event.target.value)
+            }
             className="form-control"
             id="password"
             type="password"
