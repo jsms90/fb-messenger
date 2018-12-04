@@ -14,7 +14,7 @@ const Messenger = ({ showSettings, newMessage, history, match }) => (
       history={history}
       match={match}
     />
-    <Route path={`/messages/:username`} component={ConversationContainer} />
+    <Route path={`${match.url}/:username`} component={ConversationContainer} />
   </div>
 );
 
