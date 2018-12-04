@@ -11,15 +11,19 @@ import Profile from "./Profile";
 
 const App = () => (
   <div className="app">
-    <TopBar userPosition="right" />
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/messages" component={Messenger} />
       <Route path="/login" component={Login} />
-      <Route path="/profile" component={Profile} />
-      <Route component={NotFound} />
+      <div className="app">
+        <TopBar userPosition="right" />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/messages" component={Messenger} />
+          <Route path="/profile" component={Profile} />
+          <Route component={NotFound} />
+        </Switch>
+        <Footer />
+      </div>
     </Switch>
-    <Footer />
   </div>
 );
 
