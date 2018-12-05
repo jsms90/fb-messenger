@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Link from './atoms/Link'
 
 const Home = () => (
   <div className="page-center">

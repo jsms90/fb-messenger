@@ -8,49 +8,6 @@ html, body {
   height: 100%;
 }
 
-.top-bar {
-  background: $dark-blue;
-  padding: 1em;
-  text-align: center;
-  border-bottom: 1px solid #29487d;
-  color: $white;
-  a, .icon {
-    color: $white;
-  }
-  a {
-    cursor: pointer;
-  }
-  ul {
-    list-style: none;
-    position: absolute;
-    top: 20px;
-    display: block;
-    img {
-      border-radius: 50%;
-      height: 50px;
-      height: 30px;
-      margin-top: -5px;
-    }
-    li {
-      display: inline-block;
-      padding-right: 8px;
-      padding-left: 8px;
-      &:last-child {
-        padding-right: 0;
-      }
-      &:first-child {
-        padding-left: 0;
-      }
-    }
-    &.right {
-      right: 20px;
-    }
-    &.left {
-      left: 20px;
-    }
-  }
-}
-
 .messenger {
   display: flex;
   flex: 1;
@@ -244,11 +201,6 @@ html, body {
 .icon {
   color: $grey;
   font-size: 1.5rem;
-}
-
-a .icon {
-  color: $light-blue;
-  cursor: pointer;
 }
 
 button {
