@@ -3,12 +3,12 @@ const sum = (a, b) => a + b
 const substract = (a, b) => a - b
 
 function test(message, callback) {
-  /* Task:
-    - console.log the message
-    - Execute the callback
-    - Catch the error if the callback throws an error and display the error message
-    - Bonus, add emojis 😋
-  */
+  console.log(message)
+  try {
+    callback()
+  } catch (e) {
+    console.log(`Error: ${e.message}`)
+  }
 }
 
 test('sum 2 and 1 should be 3', () => {

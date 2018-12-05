@@ -3,19 +3,17 @@ const sum = (a, b) => a + b
 const substract = (a, b) => a - b
 
 function it(message, callback) {
-  /* Task:
-    - console.log the message
-    - Execute the callback
-    - Catch the error if the callback throw an error and display the error message
-    - Bonus, add emojis 😋
-  */
+  console.log(message)
+  try {
+    callback()
+  } catch (e) {
+    console.log(`Error: ${e.message}`)
+  }
 }
 
 function describe(message, callback) {
-  /* Task:
-    - console.log the message
-    - Execute the callback
-  */
+  console.log(message)
+  callback()
 }
 
 describe('Testing sum',() => {
