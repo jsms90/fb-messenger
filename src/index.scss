@@ -8,24 +8,6 @@ html, body {
   height: 100%;
 }
 
-.app {
-  background-color: $white;
-  overflow: hidden;
-  flex: 1;
-  flex-flow: row wrap;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  justify-content: flex-start;
-  order: 0;
-  flex-flow: column nowrap;
-  align-items: stretch;
-  flex-direction: column;
-  display: flex;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-}
-
 .top-bar {
   background: $dark-blue;
   padding: 1em;
