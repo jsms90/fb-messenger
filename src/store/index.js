@@ -15,7 +15,14 @@ const addLoggerMiddleware = store => {
 }
 
 const addThunkMiddleware = store => {
-
+  const rawDispatch = store.dispatch
+  return action => {
+    if (typeof action === "function") {
+      action(rawDispatch)
+    } else {
+      rawDispatch(action) // i.e. continue as normal
+    }
+  }
 };
 
 const configureStore = () => {
@@ -23,7 +30,9 @@ const configureStore = () => {
     reducers
   )
 
-  store.dispatch = addLoggerMiddleware(store)
+    store.dispatch = addLoggerMiddleware(store)(store.dispatch)
+    store.dispatch = addThunkMiddlware(store)
+  // store.dispatch = appplyMiddlware(addLoggerMiddleware, addThunkMiddleware)
 
   return store
 }
