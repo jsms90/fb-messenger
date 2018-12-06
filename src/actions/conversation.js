@@ -20,5 +20,17 @@ export const loadingConversation = loading => ({
 })
 
 export const fetchConversation = username => async (dispatch, getState) => {
-
+    // TODO use a selector
+    const loading = getState().conversation.loading
+    try {
+        if (loading) {
+            return
+        }
+        dispatch(loadingConversation(true))
+        const nextConversation = await api.fetchConversation(username)
+        dispatch(receiveConversation(nextConversation))
+        dispatch(loadingConversation(false))
+        } catch (error) {
+        dispatch(loadingConversation(false))
+    }
 }
