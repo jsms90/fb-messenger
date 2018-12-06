@@ -61,6 +61,7 @@
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "node scripts/start.js",
     "start": "npm-run-all -p watch-css start-js",
+    "test": "jest",
     "build-js": "node scripts/build.js",
     "build": "npm-run-all build-css build-js",
     "t2": "node scripts/test.js --env=jsdom --silent --verbose --noStackTrace --runInBand"
@@ -109,7 +110,9 @@
     "extends": "react-app"
   },
   "devDependencies": {
+    "babel-jest": "^23.6.0",
     "enzyme": "^3.2.0",
-    "enzyme-adapter-react-16": "^1.1.1"
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.6.0"
   }
 }
