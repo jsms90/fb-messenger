@@ -1,0 +1,347 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Messages /> should send a message (unit test) 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Messages
+    api={
+      Object {
+        "sendMessage": [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {
+                "message": "",
+                "to": "semra",
+              },
+            ],
+          ],
+        },
+      }
+    }
+    conversation={
+      Array [
+        Object {
+          "from": "jen",
+          "message": "this is sooooo fun",
+          "to": "semra",
+        },
+      ]
+    }
+    receiveMessage={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            undefined,
+          ],
+        ],
+      }
+    }
+    username="semra"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <styled.div>
+          <styled.div
+            from="received"
+          >
+            <Message
+              from="received"
+            >
+              this is sooooo fun
+            </Message>
+          </styled.div>
+        </styled.div>,
+        <styled.div>
+          <styled.input
+            onChange={[Function]}
+            placeholder="Type your message..."
+            type="text"
+            value=""
+          />
+          <button
+            onClick={[Function]}
+          >
+            Send
+          </button>
+        </styled.div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.div
+              from="received"
+            >
+              <Message
+                from="received"
+              >
+                this is sooooo fun
+              </Message>
+            </styled.div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                false,
+                <Message
+                  from="received"
+                >
+                  this is sooooo fun
+                </Message>,
+                false,
+              ],
+              "from": "received",
+            },
+            "ref": null,
+            "rendered": Array [
+              false,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "this is sooooo fun",
+                  "from": "received",
+                },
+                "ref": null,
+                "rendered": "this is sooooo fun",
+                "type": [Function],
+              },
+              false,
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.input
+              onChange={[Function]}
+              placeholder="Type your message..."
+              type="text"
+              value=""
+            />,
+            <button
+              onClick={[Function]}
+            >
+              Send
+            </button>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "onChange": [Function],
+              "placeholder": "Type your message...",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Send",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Send",
+            "type": "button",
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.div>
+            <styled.div
+              from="received"
+            >
+              <Message
+                from="received"
+              >
+                this is sooooo fun
+              </Message>
+            </styled.div>
+          </styled.div>,
+          <styled.div>
+            <styled.input
+              onChange={[Function]}
+              placeholder="Type your message..."
+              type="text"
+              value=""
+            />
+            <button
+              onClick={[Function]}
+            >
+              Send
+            </button>
+          </styled.div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.div
+                from="received"
+              >
+                <Message
+                  from="received"
+                >
+                  this is sooooo fun
+                </Message>
+              </styled.div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  false,
+                  <Message
+                    from="received"
+                  >
+                    this is sooooo fun
+                  </Message>,
+                  false,
+                ],
+                "from": "received",
+              },
+              "ref": null,
+              "rendered": Array [
+                false,
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "this is sooooo fun",
+                    "from": "received",
+                  },
+                  "ref": null,
+                  "rendered": "this is sooooo fun",
+                  "type": [Function],
+                },
+                false,
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.input
+                onChange={[Function]}
+                placeholder="Type your message..."
+                type="text"
+                value=""
+              />,
+              <button
+                onClick={[Function]}
+              >
+                Send
+              </button>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChange": [Function],
+                "placeholder": "Type your message...",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Send",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Send",
+              "type": "button",
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

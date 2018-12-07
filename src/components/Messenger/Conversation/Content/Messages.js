@@ -121,6 +121,8 @@ export class Messages extends React.Component {
   }
 }
 
+Message.displayName = 'Message'
+
 Messages.defaultProps = {
   api
 }
